@@ -166,23 +166,23 @@ sn^*_A &= PRF(sk_A, r^*_A)
 \IEEEauthorblockA{
 \textit{Sichuan University, Pittsburgh Institute} \\
 Chengdu, China \\
-1241819742@qq.com} \\
-\IEEEauthorblockN{Lu Ding}
+xxxxxxxx@qq.com} \\
+\IEEEauthorblockN{xx xxxx}
 \IEEEauthorblockA{
-\textit{Kunming Power Exchange Center} \\
+\textit{xxxxxxxxxxx} \\
 Kunming, China \\
-1042872668@qq.com}
+xxxxxxxxxx@qq.com}
 \and
 \IEEEauthorblockN{Yuyang Cheng$^\&$}
 \IEEEauthorblockA{
 \textit{Sichuan University, School of Cyber Science and Engineering} \\
 Chengdu, China \\
-1332628018@qq.com} \\
+xxxxxxxxxx@qq.com} \\
 \IEEEauthorblockN{Yong Zhao}
 \IEEEauthorblockA{
 \textit{Sichuan University, Pittsburgh Institute} \\
 Chengdu, China \\
-yong.zhao@scupi.cn}
+xxxxx@xxxxx.cn}
 }
 ```
 
