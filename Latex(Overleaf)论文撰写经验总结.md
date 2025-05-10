@@ -206,6 +206,19 @@ xxxxx@xxxxx.cn}
 
 14pt font size and 16pt line spacing（行高）
 
+#### 图片的插入
+
+```
+\begin{figure*}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{Graphs/xxx.pdf}
+  \caption{xxx}
+  \label{figx}
+\end{figure*}
+```
+
+注意，`\begin{figure*}`适用于双栏排版时，想要跨栏放置图片（更大的显示区域）。如果不加`*`,则是普通插入。
+
 #### 行间距
 
 段内行间距，这里有两种：
@@ -528,6 +541,8 @@ Instead of:
 \end{table}
 ```
 
+
+
 #### 两张图放在一排
 
 ```
@@ -601,7 +616,9 @@ Use the `\balance` command from the `balance` package to balance the content of 
 \lstinputlisting[language=C++]{./code/1.cpp}
 ```
 
+#### 添加脚注
 
+在要添加脚注的地方标 `\footnote{We xxxxxx.}`即可自动在页面左下角生成脚注。
 
 #### 自动目录
 
