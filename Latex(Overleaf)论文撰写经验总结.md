@@ -666,3 +666,72 @@ Use the `\balance` command from the `balance` package to balance the content of 
 #### 取消首行缩进
 
 `\noindent`后面跟你这一段的内容，则这一整段都不缩进
+
+
+
+#### 在Overleaf中显示中文
+
+在Overleaf中显示中文需要进行一些额外的配置，因为默认的编译器并不支持中文输入。以下是几种常见的方法来实现：
+
+##### 使用`XeLaTeX`或`LuaLaTeX`编译器
+
+1. 这两种编译器原生支持`UTF-8`编码，可以直接处理中文字符。具体步骤如下：
+
+- 在文档的`preamble`部分将`documentclass设置为`ctexart`：
+
+```
+\documentclass{ctexart}
+```
+
+- 点击左上角的Menu选项，将`Settings-Compiler`设置为`XeLaTeX`或`LuaLaTeX`。
+
+这种方法适用于需要频繁切换中英文文档的情况。
+
+2. 使用`ctex`包
+
+如果不希望修改`documentclass`，可以使用`ctex`包来支持中文显示。具体步骤如下：
+
+- 在文档的`preamble`部分添加：
+
+```
+\usepackage{ctex}
+```
+
+- 点击左上角的`Menu`选项，将`Settings-Compiler`设置为`XeLaTeX`或`LuaLaTeX`。
+
+这种方法与第一种方法类似，但不需要修改`documentclass`。
+
+##### 使用`CJKutf8`包
+
+这种方法不需要修改编译器，可以使用默认的`pdfLaTeX`编译器。具体步骤如下：
+
+- 在文档的`preamble`部分添加：
+
+```
+\usepackage{CJKutf8}
+```
+
+- 将中文内容用*CJK*环境包裹，例如：
+
+```
+\documentclass{article}
+\usepackage{CJKutf8}
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+
+数学、中英文皆可以混排。You can intersperse math, Chinese and English (Latin script) without adding extra environments
+
+\end{CJK*}
+
+\begin{CJK*}{UTF8}{bsmi}
+
+這是繁體中文。
+
+\end{CJK*}
+
+\end{document}
+```
+
+这种方法适用于不希望修改编译器设置的情况。
